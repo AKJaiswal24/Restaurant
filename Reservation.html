@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="  crossorigin="anonymous"  referrerpolicy="no-referrer" />
+    <title>Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="topname">Wholesome Dining</h1>
+    <header>
+        <nav>
+            <div class="logo">
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click">
+                <div class="menuicon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="file:index.html" class="active">Home</a></li>
+                <li><a href="file:About.html">About</a></li>
+                <li><a href="file:Menu.html">Menu</a></li>
+                <li><a href="file:Reservation.html">Reservation</a></li>
+                <!-- <li><a href="file:Contact.html">Contact</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <!-- visit my reservation repositatory to make the form working -->
+    <form class="form" target="_blank" action="https://formsubmit.co/" method="POST">
+        <h1>Schedule
+            <span class="message">Reservation</span>
+        </h1>
+        <label> <span>Name</span>
+        <input name="Name" autocomplete="off" type="text" placeholder="eg.Shubham" class="input" required></label>
+        <label for=""><span>Purpose</span>
+            <input name="Purpose for Reservation" autocomplete="off" type="text" class="input" placeholder="eg.family dinner">
+        </label>
+
+        <label for="">Private room
+        <input type="radio" name="Private_room">Yes
+        <input type="radio" name="Private_room">No
+        </label>
+        <label> <span>No of People</span>
+        <input name="No of People" type="number" autocomplete="off" placeholder="eg.2 or 4" class="input" required></label>
+        <fieldset>
+            <div class="custom">
+            <label class="sm"><span>Date</span></label>
+                <input name="Date" type="date" class="day" required>
+            </div>
+            <div class="custom">
+            <label for="" class="sm"><span>Time</span></label>
+            <input name="Time" type="time" class="day" required>
+            </div>
+        </fieldset>
+        <div class="confirm">
+            <button type="submit">Confirm the Reservation</button>
+        </div>
+        <input type="hidden" name="_next" value="thanks.html">
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+</body>
+</html>
